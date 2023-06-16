@@ -65,5 +65,23 @@ public class ResponseUtil {
         return status;
     }
 
+    public static ResponseStatus createFailedInvalidInputStatusWithSet(ResponseCode responseCode, Set<String> fields){
+        ResponseStatus status = new ResponseStatus();
+        status.setCode(Integer.valueOf(ResponseCode.FAILED.getCode()));
+        status.setMessage(ResponseCode.FAILED.getDescription());
+
+        // Set errorCode
+        List<ErrorCode> errorCodes = new ArrayList<>();
+        for (String field: fields){
+            ErrorCode errorCode = new ErrorCode();
+            errorCode.setCode(responseCode.getCode());
+            errorCode.setMessage(String.format(responseCode.getDescription(),field));
+            errorCodes.add(errorCode);
+        }
+
+        status.setErrors(errorCodes);
+        return status;
+    }
+
 }
 
