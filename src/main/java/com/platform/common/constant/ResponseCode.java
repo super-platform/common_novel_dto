@@ -5,7 +5,8 @@ import org.apache.commons.lang3.StringUtils;
 public enum ResponseCode {
     SUCCESSFUL("0", "SUCCESS"),
     FAILED("1", "FAILED"),
-    E998("998", "Error"),
+    E404("404", "Resource Not Found"),
+    E500("500", "Internal Server Error"),
     E999("999", "[%s] - Invalid Parameters or values");
 
     private final String code;
