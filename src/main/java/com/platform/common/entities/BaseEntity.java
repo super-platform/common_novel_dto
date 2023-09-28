@@ -1,5 +1,6 @@
 package com.platform.common.entities;
 
+import com.querydsl.core.annotations.QueryEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,12 +14,14 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
+@QueryEntity
 public abstract class BaseEntity {
     @Id
     @Column(name = "id")

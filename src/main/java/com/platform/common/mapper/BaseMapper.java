@@ -1,6 +1,6 @@
 package com.platform.common.mapper;
 
-import com.platform.common.dto.response.BaseDTO;
+import com.platform.common.dto.BaseDTO;
 import com.platform.common.entities.BaseEntity;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;

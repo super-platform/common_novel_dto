@@ -15,7 +15,6 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Builder
 public class ResponseStatus {
-    private static final long serialVersionUID = 1L;
 
     @JsonProperty("code")
     private Integer code = null;

@@ -1,4 +1,4 @@
-package com.platform.common.dto.response;
+package com.platform.common.dto;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
