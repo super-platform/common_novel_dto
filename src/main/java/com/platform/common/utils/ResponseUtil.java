@@ -1,8 +1,8 @@
 package com.platform.common.utils;
 
 import com.platform.common.constant.ResponseCode;
-import com.platform.common.dto.response.ErrorCode;
-import com.platform.common.dto.response.ResponseStatus;
+import com.platform.common.dto.ErrorCode;
+import com.platform.common.dto.ResponseStatus;
 import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;

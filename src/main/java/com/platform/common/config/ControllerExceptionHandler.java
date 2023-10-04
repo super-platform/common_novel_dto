@@ -1,17 +1,14 @@
 package com.platform.common.config;
 
 import com.platform.common.constant.ResponseCode;
-import com.platform.common.dto.response.ResponseStatus;
-import com.platform.common.dto.response.ResponseWithBody;
+import com.platform.common.dto.ResponseStatus;
+import com.platform.common.dto.ResponseWithBody;
 import com.platform.common.exception.ResourceNotFoundException;
 import com.platform.common.utils.ResponseUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
-
-import java.util.Date;
 
 @RestControllerAdvice
 @Slf4j

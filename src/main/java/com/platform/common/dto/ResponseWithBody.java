@@ -1,4 +1,4 @@
-package com.platform.common.dto.response;
+package com.platform.common.dto;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.swagger.v3.oas.annotations.media.Schema;

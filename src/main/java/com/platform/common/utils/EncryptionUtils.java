@@ -2,8 +2,8 @@ package com.platform.common.utils;
 
 import com.google.gson.Gson;
 import com.platform.common.dto.EncryptDTO;
-import com.platform.common.dto.response.ResponseStatus;
-import com.platform.common.dto.response.ResponseWithBody;
+import com.platform.common.dto.ResponseStatus;
+import com.platform.common.dto.ResponseWithBody;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.springframework.beans.factory.annotation.Value;
